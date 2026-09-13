@@ -114,7 +114,7 @@ function imprimirProblemas(incluirSolucion) {
             margin-bottom: 25px;
         }
         .banner-categoria {
-            background-color: #caf7f5 !important;
+            background-color: #ffedd5 !important;
             border: 1px solid #e2e8f0;
             padding: 18px 24px;
             border-radius: 8px;
