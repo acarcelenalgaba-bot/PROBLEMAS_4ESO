@@ -25,7 +25,14 @@ baseDatosTemas["tema1"] = {
                 {
                     titulo: "Subniveles de energía",
                     enunciado: "Indica cuántos subniveles de energía existen en el tercer nivel y el número de electrones que caben en cada uno.",
-                    solucion: "<div class='paso'>Solución pendiente de añadir.</div>"
+                    solucion: `
+                    <div class='paso'>
+                        En el tercer nivel de energía ($\\ce{n = 3}$) existen tres subniveles: 3s, 3p y 3d.<br>
+                        - Subnivel 3s: puede albergar hasta 2 electrones.<br>
+                        - Subnivel 3p: puede albergar hasta 6 electrones.<br>
+                        - Subnivel 3d: puede albergar hasta 10 electrones.<br>
+                        En total, el tercer nivel puede albergar un máximo de 18 electrones.                    
+                    </div>`
                 },
                 {
                     titulo: "Elección de subniveles",
