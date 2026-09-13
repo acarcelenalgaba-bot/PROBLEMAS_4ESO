@@ -37,7 +37,12 @@ baseDatosTemas["tema1"] = {
                 {
                     titulo: "Elección de subniveles",
                     enunciado: "Indica, en cada uno de los siguientes casos, en qué subnivel de energía caben más electrones.<br>(a) 1s o 2s<br>(b) 2p o 3p<br>(c) 2s o 2p",
-                    solucion: "<div class='paso'>Solución pendiente de añadir.</div>"
+                    solucion: `
+                    <div class='paso'>
+                        (a) 2s, ya que ambos subniveles pueden albergar 2 electrones, pero el subnivel 2s pertenece al segundo nivel de energía, que tiene más capacidad total.<br>
+                        (b) 3p, ya que ambos subniveles pueden albergar 6 electrones, pero el subnivel 3p pertenece al tercer nivel de energía, que tiene más capacidad total.<br>
+                        (c) 2p, ya que el subnivel 2s puede albergar 2 electrones, mientras que el subnivel 2p puede albergar 6 electrones.
+                    </div>`
                 },
                 {
                     titulo: "Orbitales s y p",
