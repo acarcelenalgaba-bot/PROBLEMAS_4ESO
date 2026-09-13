@@ -16,10 +16,10 @@ baseDatosTemas["tema1"] = {
                     solucion: `
                     <div class='paso'>
                         El átomo de hidrógeno tiene un solo electrón, que se encuentra en el nivel 1s. Por lo tanto, los cuatro primeros niveles electrónicos son:<br>
-                        1. Nivel 1: 1s^1<br>
-                        2. Nivel 2: 2s^1<br>
-                        3. Nivel 3: 3s^1<br>
-                        4. Nivel 4: 4s^1
+                        1. Nivel 1: &nbsp;&nbsp;\\(\\ce{1s^1}\\)<br>
+                        2. Nivel 2: &nbsp;&nbsp;\\(\\ce{2s^1}\\)<br>
+                        3. Nivel 3: &nbsp;&nbsp;\\(\\ce{3s^1}\\)<br>
+                        4. Nivel 4: &nbsp;&nbsp;\\(\\ce{4s^1}\\)
                     </div>`
                 },
                 {
@@ -126,7 +126,7 @@ baseDatosTemas["tema1"] = {
                 },
                 {
                     titulo: "Características de elementos químicos",
-                    enunciado: "Observa la siguiente figura:<br><img src='img/u1_ej19.png' alt='Cortezas electrónicas de F, Be, Ga y Se' style='width: 100%; max-width: 600px;'><br>Con la ayuda de los datos que aparecen en ella indica:<br>(a) Los símbolos de los cuatro elementos.<br>(b) Los elementos no metálicos.<br>(c) Los elementos del grupo 13.<br>(d) Los elementos pertenecientes al 2º periodo.<br>(e) El metal más reactivo.<br>(f) El no metal de mayor tamaño.<br>(g) Los elementos que tienen completo el tercer nivel energético de su corteza electrónica.<br>(h) Los electrones de valencia de cada uno de los elementos.<br>(i) Los protones de cada elemento suponiendo átomos neutros.",
+                    enunciado: "Observa la siguiente figura:<br><img src='img/u1_ej19.png' alt='Cortezas electrónicas de F, Be, Ga y Se' style='width: 100%; height: auto'><br>Con la ayuda de los datos que aparecen en ella indica:<br>(a) Los símbolos de los cuatro elementos.<br>(b) Los elementos no metálicos.<br>(c) Los elementos del grupo 13.<br>(d) Los elementos pertenecientes al 2º periodo.<br>(e) El metal más reactivo.<br>(f) El no metal de mayor tamaño.<br>(g) Los elementos que tienen completo el tercer nivel energético de su corteza electrónica.<br>(h) Los electrones de valencia de cada uno de los elementos.<br>(i) Los protones de cada elemento suponiendo átomos neutros.",
                     solucion: `
                     <div class='paso'>Solución pendiente de añadir.
                     
