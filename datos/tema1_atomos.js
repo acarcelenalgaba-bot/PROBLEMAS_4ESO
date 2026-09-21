@@ -56,7 +56,7 @@ baseDatosTemas["tema1"] = {
                 },
                 {
                     titulo: "Configuración electrónica y electrones de valencia",
-                    enunciado: "Escribe la configuración electrónica de los siguientes elementos e indica cuántos electrones tienen en su capa de valencia:<br>a) He (Z = 2)<br>b) B (Z = 5)<br>c) Ne (Z = 10)<br>d) S (Z = 16)<br>e) K (Z = 19)<br>f) Fe (Z = 26)<br>g) Cu (Z = 29)<br>h) Br (Z = 35)<br>i) Zr (Z = 40)<br>j) U (Z = 92)",
+                    enunciado: "Escribe la configuración electrónica de los siguientes elementos e indica cuántos electrones tienen en su capa de valencia:<br>a) He (Z = 2)<br>b) B (Z = 5)<br>c) Ne (Z = 10)<br>d) S (Z = 16)<br>e) K (Z = 19)<br>f) Fe (Z = 26)<br>g) Cu (Z = 29)<br>h) Br (Z = 35)<br>i) Zr (Z = 40)",
                     solucion: "<div class='paso'>Solución pendiente de añadir.</div>"
                 },
                 {
