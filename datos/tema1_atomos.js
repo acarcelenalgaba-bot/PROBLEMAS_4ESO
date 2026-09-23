@@ -131,16 +131,14 @@ baseDatosTemas["tema1"] = {
                     <div class='paso'>Solución pendiente de añadir.
                     
                     </div>`
-                },
+                }
+            ]
+        },
+        "enlace": {
+            nombre: "Enlace iónico",
+            problemas: [
                 {
-                    titulo: "Reacciones de fisión nuclear",
-                    enunciado: "Completa las siguientes reacciones de fisión:<br>(a) ²³⁹U + ⁰n → 3 ⁰n + ⁷⁹Rb + ?<br>(b) ²³⁷U + ⁰n → ⁸⁹Rb + ¹⁴⁴Cs + ?",
-                    solucion: "<div class='paso'>Solución pendiente de añadir.</div>"
-                },
-                {
-                    titulo: "Reacciones de fusión nuclear",
-                    enunciado: "Completa las siguientes ecuaciones nucleares:<br>(a) ²²⁶Ra → ⁴₂He + ?<br>(b) ¹⁴N + ⁰n → ¹¹B + ?<br>(c) ²⁷N + ⁴He → ³⁰P + ?<br>(d) ⁷Li + ⁰n → ? + ¹⁰B",
-                    solucion: "<div class='paso'>Solución pendiente de añadir.</div>"
+                
                 }
             ]
         }
