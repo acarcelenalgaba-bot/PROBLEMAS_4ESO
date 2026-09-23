@@ -138,6 +138,12 @@ baseDatosTemas["tema1"] = {
             nombre: "Enlace iónico",
             problemas: [
                 {
+                    titulo: "Enlace iónico y fórmula química",
+                    enunciado: 'Consideramos tres elementos con los siguientes números atómicos:<table style="margin: 15px auto; border-collapse: collapse;"><tr><th scope="row" style="border: 1px solid #ccc; padding: 6px 12px; background-color: #f4f4f4;">Elemento</th><td style="border: 1px solid #ccc; padding: 6px 12px; text-align: center;">X</td><td style="border: 1px solid #ccc; padding: 6px 12px; text-align: center;">Y</td><td style="border: 1px solid #ccc; padding: 6px 12px; text-align: center;">Z</td></tr><tr><th scope="row" style="border: 1px solid #ccc; padding: 6px 12px; background-color: #f4f4f4;">Nº atómico</th><td style="border: 1px solid #ccc; padding: 6px 12px; text-align: center;">9</td><td style="border: 1px solid #ccc; padding: 6px 12px; text-align: center;">16</td><td style="border: 1px solid #ccc; padding: 6px 12px; text-align: center;">20</td></tr></table><br>Imagina que se combinan: <br> <span style="margin-right: 50px;"></span> &bull; X con Y <span style="margin-right: 150px;"></span> &bull; Y con Z <br>En cada caso, determina:<br>a) Cómo es el enlace entre los átomos.<br>b) Cuál es su fórmula. La puedes elegir entre la siguientes: Y<sub>2</sub>X, YX, YX<sub>2</sub>, Y<sub>2</sub>Z<sub>2</sub>, YZ, Y<sub>2</sub>Z.',
+                    solucion: `
+                    <div class='paso'>Solución pendiente de añadir.
+                     
+                    </div>`
                 
                 }
             ]
