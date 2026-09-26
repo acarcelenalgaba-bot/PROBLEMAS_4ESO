@@ -96,17 +96,12 @@ baseDatosTemas["tema1"] = {
                 },
                 {
                     titulo: "Tamaño atómico",
-                    enunciado: "Coloca por orden creciente de tamaño atómico los siguientes elementos: carbono (Z = 6), sodio (Z = 11) y flúor (Z = 9). Justifica tu respuesta.",
+                    enunciado: "Coloca por orden creciente de tamaño atómico los siguientes elementos: carbono (Z = 6), sodio (Z = 11). Justifica tu respuesta.",
                     solucion: "<div class='paso'>Solución pendiente de añadir.</div>"
                 },
                 {
                     titulo: "Radio atómico",
-                    enunciado: "Razona cuál de los elementos de las siguientes parejas tiene mayor radio.<br>(a) Rb y Na<br>(b) Na y Al<br>(c) Br y O<br>(d) Br y F",
-                    solucion: "<div class='paso'>Solución pendiente de añadir.</div>"
-                },
-                {
-                    titulo: "Reactividad química",
-                    enunciado: "De cada par de elementos del ejercicio anterior, ¿cuál presenta mayor reactividad química?",
+                    enunciado: "Razona cuál de los elementos de las siguientes parejas tiene mayor radio.<br>(a) Rb y Na<br>(b) K y Al<br>(c) Br y O<br>(d) Br y F",
                     solucion: "<div class='paso'>Solución pendiente de añadir.</div>"
                 },
                 {
@@ -121,12 +116,12 @@ baseDatosTemas["tema1"] = {
                 },
                 {
                     titulo: "Reactividad de no metales",
-                    enunciado: "Indica el no metal menos reactivo entre los siguientes: silicio, azufre, oxígeno y selenio.",
+                    enunciado: "Indica el no metal menos reactivo entre los siguientes: silicio, azufre, oxígeno y selenio. Busca la información en la tabla periódica y justifica tu respuesta.",
                     solucion: "<div class='paso'>Solución pendiente de añadir.</div>"
                 },
                 {
                     titulo: "Características de elementos químicos",
-                    enunciado: "Observa la siguiente figura:<br><img src='img/u1_ej19.png' alt='Cortezas electrónicas de F, Be, Ga y Se' style='width: 100%; height: auto'><br>Con la ayuda de los datos que aparecen en ella indica:<br>(a) Los símbolos de los cuatro elementos.<br>(b) Los elementos no metálicos.<br>(c) Los elementos del grupo 13.<br>(d) Los elementos pertenecientes al 2º periodo.<br>(e) El metal más reactivo.<br>(f) El no metal de mayor tamaño.<br>(g) Los elementos que tienen completo el tercer nivel energético de su corteza electrónica.<br>(h) Los electrones de valencia de cada uno de los elementos.<br>(i) Los protones de cada elemento suponiendo átomos neutros.",
+                    enunciado: "Observa la siguiente figura:<br><img src='img/u1_ej19.png' alt='Cortezas electrónicas de F, Be, Ga y Se' style='width: 100%; height: auto'><br>Con la ayuda de los datos que aparecen en ella indica:<br>(a) Los elementos no metálicos.<br>(b) Los elementos del grupo 13.<br>(c) Los elementos pertenecientes al 2º periodo.<br>(d) El metal más reactivo.<br>(e) El no metal de mayor tamaño.<br>(f) Los elementos que tienen completo el tercer nivel energético de su corteza electrónica.<br>(g) Los electrones de valencia de cada uno de los elementos.<br>(h) Los protones de cada elemento suponiendo átomos neutros.",
                     solucion: `
                     <div class='paso'>Solución pendiente de añadir.
                     
@@ -134,18 +129,177 @@ baseDatosTemas["tema1"] = {
                 }
             ]
         },
-        "enlace": {
-            nombre: "Enlace iónico",
+        "enlace1": {
+            nombre: "Enlace químico",
             problemas: [
                 {
-                    titulo: "Enlace iónico y fórmula química",
+                    titulo: "Regla del octeto",
+                    enunciado: 'Determina cómo cumplirán el octeto los siguientes elementos: <br>a) Al &emsp;&emsp;&emsp; b) As &emsp;&emsp;&emsp; c) Z = 54 &emsp;&emsp;&emsp; d) Z = 35 &emsp;&emsp;&emsp; e) Anfígeno del quinto periodo',
+                    solucion: `
+                    <div class='paso'>Solución pendiente de añadir.
+                     
+                    </div>`
+                
+                },                 
+                {
+                    titulo: "Regla del octeto y familia de elementos",
+                    enunciado: 'Un elemento completa su octeto ganando dos electrones. ¿A qué familia pertenece y qué elementos pueden ser?',
+                    solucion: `
+                    <div class='paso'>Solución pendiente de añadir.
+                     
+                    </div>`
+                
+                }, 
+                {
+                    titulo: "Enlace y fórmula química",
                     enunciado: 'Consideramos tres elementos con los siguientes números atómicos:<table style="margin: 15px auto; border-collapse: collapse;"><tr><th scope="row" style="border: 1px solid #ccc; padding: 6px 12px; background-color: #f4f4f4;">Elemento</th><td style="border: 1px solid #ccc; padding: 6px 12px; text-align: center;">X</td><td style="border: 1px solid #ccc; padding: 6px 12px; text-align: center;">Y</td><td style="border: 1px solid #ccc; padding: 6px 12px; text-align: center;">Z</td></tr><tr><th scope="row" style="border: 1px solid #ccc; padding: 6px 12px; background-color: #f4f4f4;">Nº atómico</th><td style="border: 1px solid #ccc; padding: 6px 12px; text-align: center;">9</td><td style="border: 1px solid #ccc; padding: 6px 12px; text-align: center;">16</td><td style="border: 1px solid #ccc; padding: 6px 12px; text-align: center;">20</td></tr></table><br>Imagina que se combinan: <br> <span style="margin-right: 50px;"></span> &bull; X con Y <span style="margin-right: 150px;"></span> &bull; Y con Z <br>En cada caso, determina:<br>a) Cómo es el enlace entre los átomos.<br>b) Cuál es su fórmula. La puedes elegir entre la siguientes: Y<sub>2</sub>X, YX, YX<sub>2</sub>, Y<sub>2</sub>Z<sub>2</sub>, YZ, Y<sub>2</sub>Z.',
                     solucion: `
                     <div class='paso'>Solución pendiente de añadir.
                      
                     </div>`
                 
+                },
+                {
+                    titulo: "Regla del octeto",
+                    enunciado: 'Enuncia la regla del octeto y aplícala para los elementos: <sub>3</sub>Li, <sub>13</sub>Al, <sub>16</sub>S, <sub>20</sub>Ca, <sub>30</sub>Zn, <sub>33</sub>As, <sub>54</sub>Xe.',
+                    solucion: `
+                    <div class='paso'>Solución pendiente de añadir.
+                     
+                    </div>`
+                
+                },
+                {
+                    titulo: "Enlace y número atómico",
+                    enunciado: 'Un elemento del tercer periodo completa su octeto ganando tres electrones. Obtén su número atómico, la configuración electrónica del elemento y el tipo de enlace que formará consigo mismo.',
+                    solucion: `
+                    <div class='paso'>Solución pendiente de añadir.
+                     
+                    </div>`
+                
+                } 
+            ]
+        },
+        "enlace2": {
+            nombre: "Enlace iónico",
+            problemas: [
+                {
+                    titulo: "Valencia iónica",
+                    enunciado: 'Predice la valencia iónica que poseerán los siguientes elementos: <br>a) B &emsp;&emsp;&emsp;b) Z = 54 &emsp;&emsp;&emsp; c) P &emsp;&emsp;&emsp; d) Alcalinotérreo del sexto periodo. &emsp;&emsp;&emsp; e) Z = 34',
+                    solucion: `
+                    <div class='paso'>Solución pendiente de añadir.
+                     
+                    </div>`
+                
+                },
+                {
+                    titulo: "Enlace y familia de elementos",
+                    enunciado: 'Dos elementos A y B cumplen la regla del octeto ganando y perdiendo dos electrones respectivamente. Contesta: <br>a) ¿A qué familia pertenece cada uno? <br>b) ¿Qué tipo de enlace los uniría? <br>c) ¿Cuál es la fórmula del compuesto que forman?',
+                    solucion: `
+                    <div class='paso'>Solución pendiente de añadir.
+                     
+                    </div>`
+                
+                }, 
+                {
+                    titulo: "Temperatura de fusión",
+                    enunciado: 'Justificad cuál de los siguientes compuestos posee mayor temperatura de fusión: <br> a) LiBr y LiCl &emsp;&emsp;&emsp; b) LiCl y Li<sub>2</sub>O &emsp;&emsp;&emsp; c) LiCl y BeS &emsp;&emsp;&emsp; d) BeS y Be<sub>3</sub>P<sub>2</sub>  ',
+                    solucion: `
+                    <div class='paso'>Solución pendiente de añadir.
+                     
+                    </div>`
+                
+                },
+                {
+                    titulo: "Conductividad eléctrica de compuestos iónicos",
+                    enunciado: 'Explica por qué los compuestos iónicos no conducen la corriente eléctrica en estado sólido si están formados por iones con carga. ¿Podrían conducirla en alguna condición?',
+                    solucion: `
+                    <div class='paso'>Solución pendiente de añadir.
+                     
+                    </div>`
+                
+                }, 
+            ]
+        },
+        "enlace3": {
+            nombre: "Enlace metálico",
+            problemas: [
+                {
+                    titulo: "Aportación de electrones en enlaces metálicos",
+                    enunciado: 'Predice cuál sería la cantidad de electrones que aporta a la nube electrónica el calcio y el aluminio.',
+                    solucion: `
+                    <div class='paso'>Solución pendiente de añadir.
+                     
+                    </div>`
+                
+                }, 
+                {
+                    titulo: "Propiedades de los metales",
+                    enunciado: 'Indica una razón a nivel atómico por la cual los metales son maleables pero los sólidos iónicos no.',
+                    solucion: `
+                    <div class='paso'>Solución pendiente de añadir.
+                     
+                    </div>`
+                
+                }, 
+                {
+                    titulo: "Conductividad eléctrica de los metales",
+                    enunciado: 'Si una sustancia metálica está formada por cationes en posiciones fijas, ¿por qué es conductora eléctrica?',
+                    solucion: `
+                    <div class='paso'>Solución pendiente de añadir.
+                     
+                    </div>`
+                
                 }
+            ]
+        },
+        "enlace4": {
+            nombre: "Enlace covalente",
+            problemas: [
+                {
+                    titulo: "Valencias covalentes y estructuras de Lewis",
+                    enunciado: 'Determina las valencias covalentes de los elementos y las estructuras de Lewis, y predice la molécula que se forma en las uniones siguientes: <br> a) H / H &emsp;&emsp;&emsp; b) N / H &emsp;&emsp;&emsp; c) C / H &emsp;&emsp;&emsp; d) C / O &emsp;&emsp;&emsp; e) S / H',
+                    solucion: `
+                    <div class='paso'>Solución pendiente de añadir.
+                     
+                    </div>`
+                
+                }, 
+                {
+                    titulo: "Estructuras de Lewis",
+                    enunciado: 'Representa la estructura de Lewis del ácido cianhídrico (HCN), metanal (HCOH, el carbono es central), hidracina (NH<sub>2</sub>-NH<sub>2</sub>) y ozono (O<sub>3</sub>).',
+                    solucion: `
+                    <div class='paso'>Solución pendiente de añadir.
+                     
+                    </div>`
+                
+                },
+                {
+                    titulo: " ",
+                    enunciado: '  ',
+                    solucion: `
+                    <div class='paso'>Solución pendiente de añadir.
+                     
+                    </div>`
+                
+                },
+                                {
+                    titulo: " ",
+                    enunciado: '  ',
+                    solucion: `
+                    <div class='paso'>Solución pendiente de añadir.
+                     
+                    </div>`
+                
+                },
+                                {
+                    titulo: " ",
+                    enunciado: '  ',
+                    solucion: `
+                    <div class='paso'>Solución pendiente de añadir.
+                     
+                    </div>`
+                
+                }, 
             ]
         }
     }
