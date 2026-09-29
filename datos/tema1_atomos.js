@@ -274,8 +274,8 @@ baseDatosTemas["tema1"] = {
                 
                 },
                 {
-                    titulo: " ",
-                    enunciado: '  ',
+                    titulo: "Propiedades de los compuestos covalentes",
+                    enunciado: 'Justifica por qué el agua es líquida a 25 °C.',
                     solucion: `
                     <div class='paso'>Solución pendiente de añadir.
                      
@@ -283,8 +283,8 @@ baseDatosTemas["tema1"] = {
                 
                 },
                                 {
-                    titulo: " ",
-                    enunciado: '  ',
+                    titulo: "Puentes de hidrógeno",
+                    enunciado: 'Determinad cuáles de los siguientes compuestos presentan puentes de hidrógeno: CH<sub>4</sub>, NH<sub>3</sub>, H<sub>2</sub>O, HF',
                     solucion: `
                     <div class='paso'>Solución pendiente de añadir.
                      
@@ -292,8 +292,8 @@ baseDatosTemas["tema1"] = {
                 
                 },
                                 {
-                    titulo: " ",
-                    enunciado: '  ',
+                    titulo: "Diferencias entre sustancias moleculares y covalentes",
+                    enunciado: '¿Qué diferencia hay entre una sustancia molecular y una sustancia covalente?',
                     solucion: `
                     <div class='paso'>Solución pendiente de añadir.
                      
