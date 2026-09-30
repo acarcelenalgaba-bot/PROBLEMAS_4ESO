@@ -274,24 +274,14 @@ baseDatosTemas["tema1"] = {
                 
                 },
                 {
-                    titulo: "Propiedades de los compuestos covalentes",
-                    enunciado: 'Justifica por qué el agua es líquida a 25 °C.',
+                    titulo: "Estructuras de Lewis de compuestos covalentes",
+                    enunciado: 'El cloroformo y el agua oxigenada son compuestos covalentes de fórmula CHCl<sub>3</sub> y H<sub>2</sub>O<sub>2</sub>, respectivamente. Dibuja la estructura de Lewis de cada uno de ellos.',
                     solucion: `
                     <div class='paso'>Solución pendiente de añadir.
                      
                     </div>`
-                
                 },
-                                {
-                    titulo: "Puentes de hidrógeno",
-                    enunciado: 'Determinad cuáles de los siguientes compuestos presentan puentes de hidrógeno: CH<sub>4</sub>, NH<sub>3</sub>, H<sub>2</sub>O, HF',
-                    solucion: `
-                    <div class='paso'>Solución pendiente de añadir.
-                     
-                    </div>`
-                
-                },
-                                {
+                {
                     titulo: "Diferencias entre sustancias moleculares y covalentes",
                     enunciado: '¿Qué diferencia hay entre una sustancia molecular y una sustancia covalente?',
                     solucion: `
