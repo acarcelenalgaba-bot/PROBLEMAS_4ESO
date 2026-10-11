@@ -5,7 +5,7 @@ if (typeof baseDatosTemas === 'undefined') {
 baseDatosTemas["tema2"] = {
     id: "tema2",
     titulo: "Tema 2: Química del Carbono",
-    deshabilitado: true,
+    deshabilitado: false,
     secciones: {
         "enlace_ionico": {
             nombre: "Enlace iónico",
