@@ -80,7 +80,7 @@ function imprimirProblemas(incluirSolucion) {
                 content: counter(page);
                 font-family: 'Segoe UI', Arial, sans-serif;
                 font-size: 11px;
-                color: #64748b; !important;
+                color: #64748b !important;
             }
         }
 
@@ -185,6 +185,38 @@ function imprimirProblemas(incluirSolucion) {
             margin: 4px 0 0 0;
         }
 
+        /* --- ESTILOS DE TABLAS DE EJERCICIOS --- */
+        .tabla-ejercicios, .tabla-ejercicios-solucion {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 0.9em;
+        }
+
+        .tabla-ejercicios th, .tabla-ejercicios-solucion th {
+            background-color: #3498db !important;
+            color: white !important;
+            padding: 10px;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .tabla-ejercicios td, .tabla-ejercicios-solucion td {
+            padding: 10px;
+            border: 1px solid #e2e8f0;
+            vertical-align: middle;
+        }
+
+        .tabla-ejercicios td:nth-child(odd) { 
+            font-weight: bold; 
+            color: #e74c3c !important; 
+            width: 40px; 
+        }
+        
+        .tabla-ejercicios tr:nth-child(even), .tabla-ejercicios-solucion tr:nth-child(even) { 
+            background-color: #f9f9f9 !important; 
+        }
+
         @media print {
             body { padding: 0; max-width: 100%; }
             .bloque-problema { page-break-inside: avoid; break-inside: avoid; box-shadow: none; }
@@ -195,6 +227,82 @@ function imprimirProblemas(incluirSolucion) {
         window.MathJax = {
             tex: { inlineMath: [['$', '$'], ['\\\\(', '\\\\)']] }
         };
+
+        function escribirChemfig() {
+            const contenedoresChemfig = document.querySelectorAll('[data-chemfig]');
+            if (contenedoresChemfig.length === 0) return;
+
+            contenedoresChemfig.forEach(contenedor => {
+                if (contenedor.getAttribute('data-rendered') === 'true') return;
+
+                let formulaChemfig = contenedor.getAttribute('data-chemfig').trim();
+                if (!formulaChemfig) return;
+
+                // Limpiar llaves si existen
+                if (formulaChemfig.startsWith('{') && formulaChemfig.endsWith('}')) {
+                    formulaChemfig = formulaChemfig.slice(1, -1).trim();
+                }
+
+                formulaChemfig = `\\rm ${formulaChemfig}`;
+                const esSolucion = contenedor.getAttribute('data-solucion') === 'true';
+
+                try {
+                    contenedor.innerHTML = '';
+                    const longitudEnlace = contenedor.getAttribute('data-longitud');
+                    let configuracionLongitud = '';
+                    
+                    if (longitudEnlace) {
+                        configuracionLongitud = `\\setchemfig{atom sep=${longitudEnlace}}`;
+                    }
+                    if (!formulaChemfig.startsWith('\\chemfig')) {
+                        formulaChemfig = `\\chemfig{${formulaChemfig}}`;
+                    }
+                    if (configuracionLongitud) {
+                        formulaChemfig = `${configuracionLongitud}${formulaChemfig}`;
+                    }
+
+                    if (esSolucion) {
+                        formulaChemfig = `\\color{red}{${formulaChemfig}}`;
+                    } else {
+                        formulaChemfig = `\\color{black}{${formulaChemfig}}`;
+                    }
+
+                    const codigoCodificado = encodeURIComponent(formulaChemfig);
+                    
+                    const moleculaImg = document.createElement('img');
+                    moleculaImg.src = `https://latex.codecogs.com/svg.image?${codigoCodificado}`;
+                    moleculaImg.alt = formulaChemfig;
+                    moleculaImg.style.display = 'block';
+                    moleculaImg.style.margin = 'left'; 
+
+                    contenedor.appendChild(moleculaImg);
+                    contenedor.setAttribute('data-rendered', 'true');
+                } catch (error) {
+                    console.error('Error en la macro Chemfig:', error);
+                }
+            });
+        }
+
+        window.addEventListener('DOMContentLoaded', async () => {
+            // 1. Dibujar moléculas Chemfig
+            escribirChemfig();
+
+            // 2. Esperar a que MathJax termine de procesar las fórmulas
+            if (window.MathJax && window.MathJax.typesetPromise) {
+                await window.MathJax.typesetPromise();
+            }
+
+            // 3. Esperar a que las imágenes SVG de CodeCogs descarguen antes de permitir/lanzar impresión
+            const imagenes = document.querySelectorAll('img');
+            const promesas = Array.from(imagenes).map(img => {
+                if (img.complete) return Promise.resolve();
+                return new Promise(resolve => {
+                    img.onload = resolve;
+                    img.onerror = resolve;
+                });
+            });
+            await Promise.all(promesas);
+        });
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
