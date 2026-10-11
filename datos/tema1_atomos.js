@@ -5,7 +5,7 @@ if (typeof baseDatosTemas === 'undefined') {
 baseDatosTemas["tema1"] = {
     id: "tema1",
     titulo: "Tema 1: Átomos y enlace",
-    deshabilitado: false,
+    deshabilitado: true,
     secciones: {
         "configuraciones": {
             nombre: "Configuraciones electrónicas",
