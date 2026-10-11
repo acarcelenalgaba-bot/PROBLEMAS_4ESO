@@ -4,7 +4,7 @@ if (typeof baseDatosTemas === 'undefined') { var baseDatosTemas = {};
 baseDatosTemas["tema3"] = {
     id: "tema3",
     titulo: "Tema 3: Formulación inorgánica",
-    deshabilitado: true,
+    deshabilitado: false,
     secciones: {
         "primer_principio": {
             nombre: "1. Enthalpías y Ley de Hess",

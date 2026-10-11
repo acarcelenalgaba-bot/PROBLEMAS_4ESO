@@ -4,7 +4,7 @@ if (typeof baseDatosTemas === 'undefined') { var baseDatosTemas = {};
 baseDatosTemas["tema4"] = {
     id: "tema4",
     titulo: "Tema 4: Reactividad Química",
-    deshabilitado: true,
+    deshabilitado: false,
     secciones: {
         "ecuaciones": {
             nombre: "1. Ecuaciones de Velocidad",

@@ -5,7 +5,7 @@ if (typeof baseDatosTemas === 'undefined') {
 baseDatosTemas["tema1"] = {
     id: "tema1",
     titulo: "Tema 1: Átomos y enlace",
-    deshabilitado: true,
+    deshabilitado: false,
     secciones: {
         "configuraciones": {
             nombre: "Configuraciones electrónicas",
@@ -266,7 +266,7 @@ baseDatosTemas["tema1"] = {
                 }, 
                 {
                     titulo: "Estructuras de Lewis",
-                    enunciado: 'Representa la estructura de Lewis del ácido cianhídrico (HCN), metanal (HCOH, el carbono es central), hidracina (NH<sub>2</sub>-NH<sub>2</sub>) y ozono (O<sub>3</sub>).',
+                    enunciado: 'Representa la estructura de Lewis del ácido cianhídrico (HCN), metanal (HCOH, el carbono es central) e hidracina (NH<sub>2</sub>-NH<sub>2</sub>).',
                     solucion: `
                     <div class='paso'>Solución pendiente de añadir.
                      
