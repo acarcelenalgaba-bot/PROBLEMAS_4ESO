@@ -3,6 +3,62 @@
  * Genera una vista en pestaña/ventana auxiliar expandida para lectura e impresión del tema activo.
  */
 
+// Función auxiliar para renderizar las moléculas directamente en el DOM de la ventana de impresión
+function procesarChemfigEnDoc(doc) {
+    const contenedoresChemfig = doc.querySelectorAll('[data-chemfig]');
+    if (contenedoresChemfig.length === 0) return;
+
+    contenedoresChemfig.forEach(contenedor => {
+        if (contenedor.getAttribute('data-rendered') === 'true') return;
+
+        let formulaChemfig = contenedor.getAttribute('data-chemfig').trim();
+        if (!formulaChemfig) return;
+
+        // Limpiar llaves envolventes si existen
+        if (formulaChemfig.startsWith('{') && formulaChemfig.endsWith('}')) {
+            formulaChemfig = formulaChemfig.slice(1, -1).trim();
+        }
+
+        formulaChemfig = `\\rm ${formulaChemfig}`;
+        const esSolucion = contenedor.getAttribute('data-solucion') === 'true';
+
+        try {
+            contenedor.innerHTML = '';
+            const longitudEnlace = contenedor.getAttribute('data-longitud');
+            let configuracionLongitud = '';
+            
+            if (longitudEnlace) {
+                configuracionLongitud = `\\setchemfig{atom sep=${longitudEnlace}}`;
+            }
+            if (!formulaChemfig.startsWith('\\chemfig')) {
+                formulaChemfig = `\\chemfig{${formulaChemfig}}`;
+            }
+            if (configuracionLongitud) {
+                formulaChemfig = `${configuracionLongitud}${formulaChemfig}`;
+            }
+
+            if (esSolucion) {
+                formulaChemfig = `\\color{red}{${formulaChemfig}}`;
+            } else {
+                formulaChemfig = `\\color{black}{${formulaChemfig}}`;
+            }
+
+            const codigoCodificado = encodeURIComponent(formulaChemfig);
+            
+            const moleculaImg = doc.createElement('img');
+            moleculaImg.src = `https://latex.codecogs.com/svg.image?${codigoCodificado}`;
+            moleculaImg.alt = formulaChemfig;
+            moleculaImg.style.display = 'block';
+            moleculaImg.style.margin = 'left'; 
+
+            contenedor.appendChild(moleculaImg);
+            contenedor.setAttribute('data-rendered', 'true');
+        } catch (error) {
+            console.error('Error procesando macro Chemfig:', error);
+        }
+    });
+}
+
 function imprimirProblemas(incluirSolucion) {
     if (typeof baseDatosTemas === 'undefined' || !baseDatosTemas || !temaActualKey) {
         alert("Error: No se ha encontrado la base de datos de temas o no hay ningún tema seleccionado.");
@@ -227,82 +283,6 @@ function imprimirProblemas(incluirSolucion) {
         window.MathJax = {
             tex: { inlineMath: [['$', '$'], ['\\\\(', '\\\\)']] }
         };
-
-        function escribirChemfig() {
-            const contenedoresChemfig = document.querySelectorAll('[data-chemfig]');
-            if (contenedoresChemfig.length === 0) return;
-
-            contenedoresChemfig.forEach(contenedor => {
-                if (contenedor.getAttribute('data-rendered') === 'true') return;
-
-                let formulaChemfig = contenedor.getAttribute('data-chemfig').trim();
-                if (!formulaChemfig) return;
-
-                // Limpiar llaves si existen
-                if (formulaChemfig.startsWith('{') && formulaChemfig.endsWith('}')) {
-                    formulaChemfig = formulaChemfig.slice(1, -1).trim();
-                }
-
-                formulaChemfig = `\\rm ${formulaChemfig}`;
-                const esSolucion = contenedor.getAttribute('data-solucion') === 'true';
-
-                try {
-                    contenedor.innerHTML = '';
-                    const longitudEnlace = contenedor.getAttribute('data-longitud');
-                    let configuracionLongitud = '';
-                    
-                    if (longitudEnlace) {
-                        configuracionLongitud = `\\setchemfig{atom sep=${longitudEnlace}}`;
-                    }
-                    if (!formulaChemfig.startsWith('\\chemfig')) {
-                        formulaChemfig = `\\chemfig{${formulaChemfig}}`;
-                    }
-                    if (configuracionLongitud) {
-                        formulaChemfig = `${configuracionLongitud}${formulaChemfig}`;
-                    }
-
-                    if (esSolucion) {
-                        formulaChemfig = `\\color{red}{${formulaChemfig}}`;
-                    } else {
-                        formulaChemfig = `\\color{black}{${formulaChemfig}}`;
-                    }
-
-                    const codigoCodificado = encodeURIComponent(formulaChemfig);
-                    
-                    const moleculaImg = document.createElement('img');
-                    moleculaImg.src = `https://latex.codecogs.com/svg.image?${codigoCodificado}`;
-                    moleculaImg.alt = formulaChemfig;
-                    moleculaImg.style.display = 'block';
-                    moleculaImg.style.margin = 'left'; 
-
-                    contenedor.appendChild(moleculaImg);
-                    contenedor.setAttribute('data-rendered', 'true');
-                } catch (error) {
-                    console.error('Error en la macro Chemfig:', error);
-                }
-            });
-        }
-
-        window.addEventListener('DOMContentLoaded', async () => {
-            // 1. Dibujar moléculas Chemfig
-            escribirChemfig();
-
-            // 2. Esperar a que MathJax termine de procesar las fórmulas
-            if (window.MathJax && window.MathJax.typesetPromise) {
-                await window.MathJax.typesetPromise();
-            }
-
-            // 3. Esperar a que las imágenes SVG de CodeCogs descarguen antes de permitir/lanzar impresión
-            const imagenes = document.querySelectorAll('img');
-            const promesas = Array.from(imagenes).map(img => {
-                if (img.complete) return Promise.resolve();
-                return new Promise(resolve => {
-                    img.onload = resolve;
-                    img.onerror = resolve;
-                });
-            });
-            await Promise.all(promesas);
-        });
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
@@ -319,4 +299,7 @@ function imprimirProblemas(incluirSolucion) {
     ventana.document.open();
     ventana.document.write(htmlDocumento);
     ventana.document.close();
+
+    // 🟢 Procesar las fórmulas Chemfig directamente sobre el DOM de la ventana nueva
+    procesarChemfigEnDoc(ventana.document);
 }
