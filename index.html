@@ -6,6 +6,83 @@
     <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> -->
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    
+    <!-- Cargar en este orden -->
+    <link rel="stylesheet" href="libs/kekule.min.css">
+    <script src="libs/openchemlib-full.js"></script>
+    <script src="libs/kekule.min.js"></script>
+
+    <script>
+    function escribirChemfig() {
+            const contenedoresChemfig = document.querySelectorAll('[data-chemfig]');
+            
+            if (contenedoresChemfig.length === 0) return;
+
+            console.log(`🧪 Renderizando mediante librería Chemfig nativa... (Total: ${contenedoresChemfig.length})`);
+
+            contenedoresChemfig.forEach(contenedor => {
+                if (contenedor.getAttribute('data-rendered') === 'true') return;
+
+                let formulaChemfig = contenedor.getAttribute('data-chemfig').trim();
+                if (!formulaChemfig) return;
+
+                // ESTA LÍNEA FUERZA TIPOGRAFÍA RECTA Y SUBÍNDICES PERFECTOS EN CODECOGS
+                formulaChemfig = `\\rm ${formulaChemfig}`;
+
+                // 1. Comprobar si es solución (evalúa como true si el atributo es "true")
+                const esSolucion = contenedor.getAttribute('data-solucion') === 'true';
+
+                try {
+                    contenedor.innerHTML = '';
+
+                    // LEER LA LONGITUD PERSONALIZADA (si no existe, no hace nada)
+                    const longitudEnlace = contenedor.getAttribute('data-longitud'); // Ejemplo: "2em" o "4em"
+                    let configuracionLongitud = '';
+                    
+                    if (longitudEnlace) {
+                        configuracionLongitud = `\\setchemfig{atom sep=${longitudEnlace}}`;
+                    }
+                    // Si la cadena no empieza explícitamente con el comando \chemfig, lo añadimos de forma automática
+                    if (!formulaChemfig.startsWith('\\chemfig')) {
+                        formulaChemfig = `\\chemfig{${formulaChemfig}}`;
+                    }
+
+                    // Unimos la configuración de longitud con la fórmula si se ha definido
+                    if (configuracionLongitud) {
+                        formulaChemfig = `${configuracionLongitud}${formulaChemfig}`;
+                    }
+
+                    // 2. Si es solución, envolvemos toda la macro en el comando de color de LaTeX
+                    // CodeCogs soporta \color{red}{...} por defecto.
+                    if (esSolucion) {
+                        formulaChemfig = `\\color{red}{${formulaChemfig}}`;
+                    } else {
+                        // Opcional: Asegurar que sea negro explícitamente si el entorno global tuviera otro color
+                        formulaChemfig = `\\color{black}{${formulaChemfig}}`;
+                    }
+
+                    // Codificamos la macro completa para la petición HTTP externa
+                    const codigoCodificado = encodeURIComponent(formulaChemfig);
+                    
+                    const moleculaImg = document.createElement('img');
+                    moleculaImg.src = `https://latex.codecogs.com/svg.image?${codigoCodificado}`;
+                    moleculaImg.alt = formulaChemfig;
+                    moleculaImg.style.display = 'block';
+                    moleculaImg.style.margin = 'left'; 
+
+                    contenedor.appendChild(moleculaImg);
+                    contenedor.setAttribute('data-rendered', 'true');
+
+                } catch (error) {
+                    console.error(`❌ Error en la macro Chemfig:`, error);
+                    contenedor.innerHTML = '<span style="color: red; font-size: 11px;">Error Chemfig</span>';
+                    contenedor.setAttribute('data-rendered', 'true');
+                }
+            });
+        }
+    
+
+    </script>
     <style>
         /* --- ESTILOS GENERALES Y LAYOUT --- */
         html, body {
@@ -211,6 +288,32 @@
         }
 
         .btn-imprimir.btn-soluciones:hover { background-color: #2980b9; }
+
+                .tabla-ejercicios, .tabla-ejercicios-solucion {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 0.9em;
+        }
+
+        .tabla-ejercicios th, .tabla-ejercicios-solucion th {
+            background-color: #3498db;
+            color: white;
+            padding: 10px;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .tabla-ejercicios td, .tabla-ejercicios-solucion td {
+            padding: 10px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .tabla-ejercicios td:nth-child(odd) { font-weight: bold; color: #e74c3c; width: 40px; }
+        .tabla-ejercicios tr:nth-child(even), .tabla-ejercicios-solucion tr:nth-child(even) { background-color: #f9f9f9; }
+
+
+
     </style>
 </head>
 <body>
@@ -396,7 +499,9 @@
             } else {
                 btn.style.display = 'none';
             }
-            
+
+            escribirChemfig();
+
             MathJax.typesetPromise();
             document.querySelector('.zona-lectura').scrollTop = 0;
         }
@@ -415,6 +520,8 @@
                 btnSiguiente.style.backgroundColor = "#3498db";
                 btnSiguiente.style.cursor = "pointer";
                 document.querySelectorAll('#caja-solucion .paso').forEach(p => p.classList.remove('visible'));
+
+                escribirChemfig();
                 MathJax.typesetPromise();
             } else {
                 caja.style.display = 'none';
@@ -430,6 +537,7 @@
             if (siguientePaso) {
                 siguientePaso.classList.add('visible'); 
                 boton.innerText = "Siguiente paso ⬇️";
+                escribirChemfig();
                 const pasosRestantes = contenedor.querySelector('.paso:not(.visible)');
                 if (!pasosRestantes) {
                     boton.innerText = "¡Solución completada!";
