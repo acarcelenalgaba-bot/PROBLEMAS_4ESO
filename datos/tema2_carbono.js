@@ -273,9 +273,9 @@ baseDatosTemas["tema2"] = {
                         </tr>
                         <tr>
                             <td>e)</td><td>3-metil-2-etilpent-2-eno</td>
-                            <td>f)</td><td><div data-chemfig="CH_3-CO-CH_2-CO-CH_3))" data-solucion="false" data-longitud="2em"></div></td>
-                            <td>g)</td><td><div data-chemfig="CH_2OH-C=CHOH" data-solucion="false" data-longitud="2em"></div></td>
-                            <td>h)</td><td><div data-chemfig="CH_3-C(=[2]O)-CH=CH_3" data-solucion="false" data-longitud="2em"></div></td>                                                        
+                            <td>f)</td><td><div data-chemfig="CH_3-CO-CH_2-CO-CH_3" data-solucion="false" data-longitud="2em"></div></td>
+                            <td>g)</td><td><div data-chemfig="CH_2OH-CH=CHOH" data-solucion="false" data-longitud="2em"></div></td>
+                            <td>h)</td><td><div data-chemfig="CH_3-C(=[2]O)-CH=CH_2" data-solucion="false" data-longitud="2em"></div></td>                                                        
                         </tr>
                     </tbody>
                 </table>
