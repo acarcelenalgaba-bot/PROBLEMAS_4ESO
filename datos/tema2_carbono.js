@@ -268,20 +268,14 @@ baseDatosTemas["tema2"] = {
                         <tr>
                             <td>a)</td><td>2,3-dimetilpentano</td>
                             <td>b)</td><td>dipropilamina</td>
-                            <td>c)</td><td>but-1-eno</td>
-                            <td>d)</td><td>buta-1,2-dieno</td>
+                            <td>c)</td><td>propano-1,2,3-triol</td>
+                            <td>d)</td><td>pentan-2-ona</td>
                         </tr>
                         <tr>
-                            <td>e)</td><td>propan-2-ol</td>
-                            <td>f)</td><td>propen-2-ol</td>
-                            <td>g)</td><td>etanal</td>
-                            <td>h)</td><td>hexan-3-ona</td>                                                        
-                        </tr>
-                        <tr>
-                            <td>i)</td><td>ácido propanoico</td>
-                            <td>j)</td><td>ácido propenoico</td>
-                            <td>k)</td><td>butilamina</td>
-                            <td>l)</td><td>butanamida</td>                                                        
+                            <td>e)</td><td>3-metil-2-etilpent-2-eno</td>
+                            <td>f)</td><td><div data-chemfig="CH_3-CO-CH_2-CO-CH_3))" data-solucion="false" data-longitud="2em"></div></td>
+                            <td>g)</td><td><div data-chemfig="CH_2OH-C=CHOH" data-solucion="false" data-longitud="2em"></div></td>
+                            <td>h)</td><td><div data-chemfig="CH_3-C(=[2]O)-CH=CH_3" data-solucion="false" data-longitud="2em"></div></td>                                                        
                         </tr>
                     </tbody>
                 </table>
