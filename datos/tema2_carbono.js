@@ -11,7 +11,7 @@ baseDatosTemas["tema2"] = {
             nombre: "Hidrocarburos",
             problemas: [
                 {
-                titulo: "Formulación de hidrocarburos",
+                titulo: "Formulación de alcanos y alquenos",
                 enunciado: `Determina la fómula de estos compuestos. <br>
                     <table class="tabla-ejercicios">
                         <thead>
@@ -28,7 +28,19 @@ baseDatosTemas["tema2"] = {
                                 <td>b)</td><td>2-metilhexano</td>
                                 <td>c)</td><td>2,3-dimetilhept-3-eno</td>
                                 <td>d)</td><td>etilpentano</td>
-                            </tr>                   
+                            </tr>
+                            <tr>
+                                <td>e)</td><td>4-etil-4-metilheptano</td>
+                                <td>f)</td><td>2,3-dimetilbuta-1,3-dieno</td>
+                                <td>g)</td><td>5-(1,2-dimetilpropil)-4-etilnonano</td>
+                                <td>h)</td><td>3-etil-6,7-dimetil-4-propildodecano</td>
+                            </tr>
+                            <tr>
+                                <td>i)</td><td>propadieno</td>
+                                <td>j)</td><td>2-metilbuta-1,3-dieno</td>
+                                <td>k)</td><td>3,5-dietil-2-metilheptano</td>
+                                <td>l)</td><td>4-(1,1-dimetiletil)octano</td>
+                            </tr>                    
                         </tbody>
                     </table>`,
                 solucion: `
@@ -38,7 +50,7 @@ baseDatosTemas["tema2"] = {
                 `
             },
             {
-                titulo: "Nomenclatura de alcanos y alquenos",
+                titulo: "Nomenclatura de alcanos, alquenos y alquinos",
                 enunciado: `Nombra los siguientes compuestos:<br>
                 <table class="tabla-ejercicios">
                     <thead>
@@ -57,6 +69,14 @@ baseDatosTemas["tema2"] = {
 
                             <td>d)</td><td><div data-chemfig="CH_2=CH-CH_2-CH(-[6]CH_2-CH_3)-CH_2-CH=CH_2" data-solucion="false" data-longitud="2em"></div></td>
                         </tr>
+                        <tr>
+                            <td>e)</td><td><div data-chemfig="CH~C-CH_2-CH(-[6]CH_2-CH_3)-CH_3" data-solucion="false" data-longitud="2em"></div></td>
+                            <td>f)</td><td><div data-chemfig="CH_2=C(-[6]CH(-[4]CH_3)-CH_3)-CH-CH_3" data-solucion="false" data-longitud="2em"></div></td>
+                        </tr>
+                        <tr>
+                            <td>g)</td><td><div data-chemfig="CH_3-CH_2-CH=CH-CH_2-CH_3" data-solucion="false" data-longitud="2em"></div></td>
+                            <td>h)</td><td><div data-chemfig="CH~C-CH_2-C~C-CH_2-CH_3" data-solucion="false" data-longitud="2em"></div></td>
+                        </tr>
                     </tbody>
                 </table>
                 `,
@@ -66,8 +86,8 @@ baseDatosTemas["tema2"] = {
                 `
             },
             {
-                titulo: "Nomenclatura de alquenos y alquinos",
-                enunciado: `Determina la formula de estos compuestos:<br>
+                titulo: "Nomenclatura y formulaciónde alquenos y alquinos",
+                enunciado: `Determina el nombre o la formula de estos compuestos:<br>
                 <table class="tabla-ejercicios">
                     <thead>
                         <tr>
@@ -78,10 +98,23 @@ baseDatosTemas["tema2"] = {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td>a)</td><td>pent-2-ino</td>
-                                <td>b)</td><td>2-isopropilhept-3-eno</td>
-                                <td>c)</td><td>3,5-dimetilhept-2-ino</td>
-                                <td>d)</td><td>3-metilpent-2,4-diino</td>
+                        <tr>
+                            <td>a)</td><td>pent-2-ino</td>
+                            <td>b)</td><td>2-isopropilhept-3-eno</td>
+                            <td>c)</td><td>3,5-dimetilhept-2-ino</td>
+                            <td>d)</td><td>3-metilpent-2,4-diino</td>
+                        </tr>
+                        <tr>
+                            <td>e)</td><td><div data-chemfig="CH_2=CH-CH_2-CH=CH-CH_3" data-solucion="false" data-longitud="2em"></div></td>
+                            <td>f)</td><td><div data-chemfig="CH_3-CH(-[6]CH-CH=CH-CH_3)-CH=CH-CH_3" data-solucion="false" data-longitud="2em"></div></td>
+                            <td>g)</td><td><div data-chemfig="CH_2=CH-CH_3" data-solucion="false" data-longitud="2em"></div></td>
+                            <td>h)</td><td><div data-chemfig="CH_3-CH_2(-[6]CH(-[4]CH_3)-C~CH" data-solucion="false" data-longitud="2em"></div></td>
+                        </tr>
+                        <tr>
+                            <td>i)</td><td>penta-1,3-diino</td>
+                            <td>j)</td><td>penta-1,3-dieno</td>
+                            <td>k)</td><td>7,7-dimetil-3-propilnona-1,5-diino</td>
+                            <td>l)</td><td>3-etilocta-1,5-diino</td>
                         </tr>
                     </tbody>
                 </table>
@@ -111,15 +144,15 @@ baseDatosTemas["tema2"] = {
                         <tbody>
                             <tr>
                                 <td>a)</td><td><div data-chemfig="CH_2OH-CH_2OH" data-solucion="false" data-longitud="2em"></div></td>
-                                <td>b)</td><td><div data-chemfig="CH_3-C~C-C~C-CHOH-CH_3" data-solucion="false" data-longitud="2em"></div></td>
-                                <td>c)</td><td><div data-chemfig="CH_3-CH(-[6]CH=[4]CH_2)-CHOH-C(=[6]CH_2)-CH_3" data-solucion="false" data-longitud="2em"></div></td>
+                                <td>b)</td><td><div data-chemfig="CH_3-C~C-CH_2-CH_2-CHOH-CH_3" data-solucion="false" data-longitud="2em"></div></td>
+                                <td>c)</td><td><div data-chemfig="CH_3-CH(-[6]CH_2-[4]CH_3)-CHOH-CH(-[6]CH_3)-CH_3" data-solucion="false" data-longitud="2em"></div></td>
                                 <td>d)</td><td>pentan-1-ol</td>
                             </tr>
                             <tr>
                                 <td>e)</td><td>prop-2-enol</td>
-                                <td>f)</td><td>etenol</td>
+                                <td>f)</td><td>etanol</td>
                                 <td>g)</td><td>3-metilbutan-2-ol</td>
-                                <td>h)</td><td>hepteno-3,4-diol</td>
+                                <td>h)</td><td>heptano-3,4-diol</td>
                             </tr>                 
                         </tbody>
                     </table>`,
