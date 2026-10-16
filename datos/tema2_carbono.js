@@ -130,7 +130,7 @@ baseDatosTemas["tema2"] = {
             nombre: "Grupos funcionales",
             problemas: [
                 {
-                titulo: "Formulación de alcoholes",
+                titulo: "Formulación de alcoholes y éteres",
                 enunciado: `Nombra o formula según convenga los siguientes alcoholes: <br>
                     <table class="tabla-ejercicios">
                         <thead>
@@ -153,7 +153,13 @@ baseDatosTemas["tema2"] = {
                                 <td>f)</td><td>etanol</td>
                                 <td>g)</td><td>3-metilbutan-2-ol</td>
                                 <td>h)</td><td>heptano-3,4-diol</td>
-                            </tr>                 
+                            </tr>
+                            <tr>
+                                <td>i)</td><td>isopropilmetileter</td>
+                                <td>j)</td><td>dimetileter</td>
+                                <td>k)</td><td><div data-chemfig="CH_3-CH_2-O-CH_2-CH_3" data-solucion="false" data-longitud="2em"></div></td>
+                                <td>l)</td><td><div data-chemfig="CH_3-O-CH_2-CH_3" data-solucion="false" data-longitud="2em"></div></td>
+                            </tr>                  
                         </tbody>
                     </table>`,
                 solucion: `
@@ -163,7 +169,7 @@ baseDatosTemas["tema2"] = {
                 `
             },
             {
-                titulo: "Nomenclatura de grupos funcionales variados",
+                titulo: "Formulación de aldehídos y cetonas",
                 enunciado: `Nombra o formulalos siguientes compuestos:<br>
                 <table class="tabla-ejercicios">
                     <thead>
@@ -178,25 +184,99 @@ baseDatosTemas["tema2"] = {
                         <tr>
                             <td>a)</td><td>pentan-2-ona</td>
                             <td>b)</td><td>metilbutanona</td>
-                            <td>c)</td><td>propilamina</td>
+                            <td>c)</td><td>propanal</td>
                             <td>d)</td><td><div data-chemfig="CHO-CH_2-CHO" data-solucion="false" data-longitud="2em"></div></td>
                         </tr>
                         <tr>
-                            <td>e)</td><td><div data-chemfig="CH_3-COO-NH_2" data-solucion="false" data-longitud="2em"></div></td>
+                            <td>e)</td><td><div data-chemfig="CH_3-CHO" data-solucion="false" data-longitud="2em"></div></td>
                             <td>f)</td><td>3-metilbutanal</td>
-                            <td>g)</td><td>ácido propilbutanodioico</td>
-                            <td>h)</td><td>etanoato de propilo</td>                                                        
+                            <td>g)</td><td>metilpropanal</td>
+                            <td>h)</td><td>4-metilpentan-2-ona</td>                                                        
                         </tr>
                         <tr>
-                            <td>i)</td><td><div data-chemfig="CH_3-COO-CH_3" data-solucion="false" data-longitud="2em"></div></td>
-                            <td>j)</td><td>dibutilamina</td>
+                            <td>i)</td><td><div data-chemfig="CH_3-CO-CH_3" data-solucion="false" data-longitud="2em"></div></td>
+                            <td>j)</td><td><div data-chemfig="CH_3-CH_2-CH_2-CH_2-CO-CH_3" data-solucion="false" data-longitud="2em"></div></td>
                             <td>k)</td><td>hex-2-endial</td>
-                            <td>l)</td><td>etanamida</td>                                                        
+                            <td>l)</td><td>4-metilhexanal</td>                                                        
                         </tr>
                         <tr>
                             <td>m)</td><td><div data-chemfig="CH_2=CH-CHO" data-solucion="false" data-longitud="2em"></div></td>
-                            <td>n)</td><td><div data-chemfig="CH_2=CH-COOH" data-solucion="false" data-longitud="2em"></div></td>
-                            <td>ñ)</td><td><div data-chemfig="CH_3-CH_2-N(-[6]CH_2-[0]CH_3)-CH_2-CH_3" data-solucion="false" data-longitud="2em"></div></td>
+                            <td>n)</td><td><div data-chemfig="CH_3-CH_2-CH_2-CO-CH_2-CH_3" data-solucion="false" data-longitud="2em"></div></td>
+                            <td>ñ)</td><td><div data-chemfig="CH_3-CH_2-CO-CH_2-CH(-[6]CH_2-[0]CH_3)-CH_2-CH_3" data-solucion="false" data-longitud="2em"></div></td>
+                            <td></td><td></td>                                                        
+                        </tr>
+                    </tbody>
+                </table>
+                `,
+                solucion: `
+                    <div class='paso'>    
+                    </div>
+                `
+            },
+            {
+                titulo: "Formulación de ácidos y esteres",
+                enunciado: `Nombra o formulalos siguientes compuestos:<br>
+                <table class="tabla-ejercicios">
+                    <thead>
+                        <tr>
+                            <th></th><th>Estructura</th>
+                            <th></th><th>Estructura</th>
+                            <th></th><th>Estructura</th>
+                            <th></th><th>Estructura</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>a)</td><td>ácido butanoico</td>
+                            <td>b)</td><td>ácido 3-metilbutanoico</td>
+                            <td>c)</td><td>etanoato de metilo</td>
+                            <td>d)</td><td><div data-chemfig="CH_3-CH_2-CH_2-CH_2-COOH" data-solucion="false" data-longitud="2em"></div></td>
+                        </tr>
+                        <tr>
+                            <td>e)</td><td><div data-chemfig="CH_3-COO-CH_2-CH_2-CH_2-CH_3" data-solucion="false" data-longitud="2em"></div></td>
+                            <td>f)</td><td>ácido propilbutanodioico</td>
+                            <td>g)</td><td>etanoato de propilo</td>                                                        
+                            <td>h)</td><td><div data-chemfig="CH_3-CH_2-COO-CH_3" data-solucion="false" data-longitud="2em"></div></td>
+                            <td></td><td></td>                                                        
+                        </tr>
+                    </tbody>
+                </table>
+                `,
+                solucion: `
+                    <div class='paso'>    
+                    </div>
+                `
+            },
+            {
+                titulo: "Formulación de aminas y amidas",
+                enunciado: `Nombra o formulalos siguientes compuestos:<br>
+                <table class="tabla-ejercicios">
+                    <thead>
+                        <tr>
+                            <th></th><th>Estructura</th>
+                            <th></th><th>Estructura</th>
+                            <th></th><th>Estructura</th>
+                            <th></th><th>Estructura</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>a)</td><td>pentan-2-amina</td>
+                            <td>b)</td><td>2-metilbutan-3-amina</td>
+                            <td>c)</td><td>propilamina</td>
+                            <td>d)</td><td>metilpropilamina</td>
+                        </tr>
+                        <tr>
+                            <td>e)</td><td><div data-chemfig="CH_3-CO-NH_2" data-solucion="false" data-longitud="2em"></div></td>
+                            <td>f)</td><td>butanamida</td>
+                            <td>g)</td><td>metanamida</td>
+                            <td>h)</td><td><div data-chemfig="CH_3-CH_2-CO-NH_2" data-solucion="false" data-longitud="2em"></div></td>                                                    
+                        </tr>
+                        <tr>
+                            <td>i)</td><td><div data-chemfig="CH_3-CH_2-CH_2-CH_2-NH_2" data-solucion="false" data-longitud="2em"></div></td>
+                            <td>j)</td><td>dibutilamina</td>
+                            <td>k)</td><td>hexanamida</td>                                                        
+                            <td>l)</td><td><div data-chemfig="CH_3-CH_2-N(-[6]CH_2-[0]CH_3)-CH_2-CH_3" data-solucion="false" data-longitud="2em"></div></td>
                             <td></td><td></td>                                                        
                         </tr>
                     </tbody>
@@ -235,7 +315,7 @@ baseDatosTemas["tema2"] = {
                         <tr>
                             <td>i)</td><td>ácido propanoico</td>
                             <td>j)</td><td>ácido propenoico</td>
-                            <td>k)</td><td>butilamina</td>
+                            <td>k)</td><td>isopropilamina</td>
                             <td>l)</td><td>butanamida</td>                                                        
                         </tr>
                     </tbody>
@@ -245,79 +325,7 @@ baseDatosTemas["tema2"] = {
                     <div class='paso'>    
                     </div>
                 `
-            },
-            {
-                titulo: "Nomenclatura de grupos funcionales variados",
-                enunciado: `Nombra los siguientes compuestos:<br>
-                <table class="tabla-ejercicios">
-                    <thead>
-                        <tr>
-                            <th></th><th>Estructura</th>
-                            <th></th><th>Estructura</th>
-                            <th></th><th>Estructura</th>
-                            <th></th><th>Estructura</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>a)</td><td><div data-chemfig="CH_3-CH(-[6]CH_2-CH_3)-CH_3" data-solucion="false" data-longitud="2em"></div></td>
-                            <td>b)</td><td><div data-chemfig="CH_2=CH-CH_3" data-solucion="false" data-longitud="2em"></div></td>
-                            <td>c)</td><td><div data-chemfig="CH_3-CHOH-CH_2OH" data-solucion="false" data-longitud="2em"></div></td>
-                            <td>d)</td><td><div data-chemfig="CH_2=C=CH_2" data-solucion="false" data-longitud="2em"></div></td>
-                        </tr>
-                        <tr>
-                            <td>e)</td><td><div data-chemfig="CH_3-CH_2-C(=[1]O)(-[7]H)" data-solucion="false" data-longitud="2em"></div></td>
-                            <td>f)</td><td><div data-chemfig="CH_3-CO-CH_2-CH_3" data-solucion="false" data-longitud="2em"></div></td>
-                            <td>g)</td><td><div data-chemfig="CH_3-CH(-[6]CH_3)-CH(-[6]CH_3)-C(=[1]O)(-[7]OH)" data-solucion="false" data-longitud="2em"></div></td>
-                            <td>h)</td><td><div data-chemfig="CH_3-N(-[6]CH_3)-CH_3" data-solucion="false" data-longitud="2em"></div></td>                                
-                        </tr>
-                        <tr>
-                            <td>i)</td><td><div data-chemfig="CH_2=CH-C(=[1]O)(-[7]H)" data-solucion="false" data-longitud="2em"></div></td>
-                            <td>j)</td><td><div data-chemfig="CH_3-C(=[1]O)(-[7]O(-CH_3))" data-solucion="false" data-longitud="2em"></div></td>
-                            <td></td><td></td>
-                            <td></td><td></td>                                                        
-                        </tr>
-                    </tbody>
-                </table>
-                `,
-                solucion: `
-                    <div class='paso'>    
-                    </div>
-                `
-            },
-            {
-                titulo: "Nombre y fórmula de grupos funcionales variados",
-                enunciado: `Nombra o determina la fórmula de estos compuestos:<br>
-                <table class="tabla-ejercicios">
-                    <thead>
-                        <tr>
-                            <th></th><th>Estructura</th>
-                            <th></th><th>Estructura</th>
-                            <th></th><th>Estructura</th>
-                            <th></th><th>Estructura</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>a)</td><td>2,3-dimetilpentano</td>
-                            <td>b)</td><td>dipropilamina</td>
-                            <td>c)</td><td>propano-1,2,3-triol</td>
-                            <td>d)</td><td>pentan-2-ona</td>
-                        </tr>
-                        <tr>
-                            <td>e)</td><td>3-metil-2-etilpent-2-eno</td>
-                            <td>f)</td><td><div data-chemfig="CH_3-CO-CH_2-CO-CH_3" data-solucion="false" data-longitud="2em"></div></td>
-                            <td>g)</td><td><div data-chemfig="CH_2OH-CH=CHOH" data-solucion="false" data-longitud="2em"></div></td>
-                            <td>h)</td><td><div data-chemfig="CH_3-C(=[2]O)-CH=CH_2" data-solucion="false" data-longitud="2em"></div></td>                                                        
-                        </tr>
-                    </tbody>
-                </table>
-                `,
-                solucion: `
-                    <div class='paso'>    
-                    </div>
-                `
-            },
+            }
             ]
         }
     }
