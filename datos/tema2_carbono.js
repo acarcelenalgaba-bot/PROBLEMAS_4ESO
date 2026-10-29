@@ -32,14 +32,14 @@ baseDatosTemas["tema2"] = {
                             <tr>
                                 <td>e)</td><td>4-etil-4-metilheptano</td>
                                 <td>f)</td><td>2,3-dimetilbuta-1,3-dieno</td>
-                                <td>g)</td><td>5-(1,2-dimetilpropil)-4-etilnonano</td>
+                                <td>g)</td><td>4-etilnonano</td>
                                 <td>h)</td><td>3-etil-6,7-dimetil-4-propildodecano</td>
                             </tr>
                             <tr>
                                 <td>i)</td><td>propadieno</td>
                                 <td>j)</td><td>2-metilbuta-1,3-dieno</td>
                                 <td>k)</td><td>3,5-dietil-2-metilheptano</td>
-                                <td>l)</td><td>4-(1,1-dimetiletil)octano</td>
+                                <td>l)</td><td>3,4-dimetiloctano</td>
                             </tr>                    
                         </tbody>
                     </table>`,
