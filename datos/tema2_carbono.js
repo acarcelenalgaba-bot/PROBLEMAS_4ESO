@@ -100,9 +100,9 @@ baseDatosTemas["tema2"] = {
                     <tbody>
                         <tr>
                             <td>a)</td><td>pent-2-ino</td>
-                            <td>b)</td><td>2-isopropilhept-3-eno</td>
-                            <td>c)</td><td>3,5-dimetilhept-2-ino</td>
-                            <td>d)</td><td>3-metilpent-2,4-diino</td>
+                            <td>b)</td><td>5-isopropilnon-3-eno</td>
+                            <td>c)</td><td>3,5-dimetilhept-2-eno</td>
+                            <td>d)</td><td>3-metilpenta-1,3-dieno</td>
                         </tr>
                         <tr>
                             <td>e)</td><td><div data-chemfig="CH_2=CH-CH_2-CH=CH-CH_3" data-solucion="false" data-longitud="2em"></div></td>
@@ -113,7 +113,7 @@ baseDatosTemas["tema2"] = {
                         <tr>
                             <td>i)</td><td>penta-1,3-diino</td>
                             <td>j)</td><td>penta-1,3-dieno</td>
-                            <td>k)</td><td>7,7-dimetil-3-propilnona-1,5-diino</td>
+                            <td>k)</td><td>7,7-dimetil-3-etilnona-1,5-diino</td>
                             <td>l)</td><td>3-etilocta-1,5-diino</td>
                         </tr>
                     </tbody>
