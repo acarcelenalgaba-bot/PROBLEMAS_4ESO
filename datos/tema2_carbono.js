@@ -71,7 +71,7 @@ baseDatosTemas["tema2"] = {
                         </tr>
                         <tr>
                             <td>e)</td><td><div data-chemfig="CH~C-CH_2-CH(-[6]CH_2-CH_3)-CH_3" data-solucion="false" data-longitud="2em"></div></td>
-                            <td>f)</td><td><div data-chemfig="CH_2=C(-[6]CH(-[4]CH_3)-CH_3)-CH-CH_3" data-solucion="false" data-longitud="2em"></div></td>
+                            <td>f)</td><td><div data-chemfig="CH_2=CH-CH_2-CH_2-CH(-[6]CH(-[4]CH_3)-CH_3)-CH_2-CH_2-CH_2-CH_3" data-solucion="false" data-longitud="2em"></div></td>
                         </tr>
                         <tr>
                             <td>g)</td><td><div data-chemfig="CH_3-CH_2-CH=CH-CH_2-CH_3" data-solucion="false" data-longitud="2em"></div></td>
