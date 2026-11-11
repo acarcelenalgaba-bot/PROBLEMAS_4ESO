@@ -113,7 +113,7 @@ baseDatosTemas["tema2"] = {
                         <tr>
                             <td>i)</td><td>penta-1,3-diino</td>
                             <td>j)</td><td>penta-1,3-dieno</td>
-                            <td>k)</td><td>7,7-dimetil-3-etilnona-1,5-diino</td>
+                            <td>k)</td><td>3-etil-7,7-dimetilnona-1,5-diino</td>
                             <td>l)</td><td>3-etilocta-1,5-diino</td>
                         </tr>
                     </tbody>
@@ -203,7 +203,7 @@ baseDatosTemas["tema2"] = {
                             <td>m)</td><td><div data-chemfig="CH_2=CH-CHO" data-solucion="false" data-longitud="2em"></div></td>
                             <td>n)</td><td><div data-chemfig="CH_3-CH_2-CH_2-CO-CH_2-CH_3" data-solucion="false" data-longitud="2em"></div></td>
                             <td>ñ)</td><td><div data-chemfig="CH_3-CH_2-CO-CH_2-CH(-[6]CH_2-[0]CH_3)-CH_2-CH_3" data-solucion="false" data-longitud="2em"></div></td>
-                            <td></td><td></td>                                                        
+                            <td></td>                                                        
                         </tr>
                     </tbody>
                 </table>
@@ -236,8 +236,7 @@ baseDatosTemas["tema2"] = {
                             <td>e)</td><td><div data-chemfig="CH_3-COO-CH_2-CH_2-CH_2-CH_3" data-solucion="false" data-longitud="2em"></div></td>
                             <td>f)</td><td>ácido propilbutanodioico</td>
                             <td>g)</td><td>etanoato de propilo</td>                                                        
-                            <td>h)</td><td><div data-chemfig="CH_3-CH_2-COO-CH_3" data-solucion="false" data-longitud="2em"></div></td>
-                            <td></td><td></td>                                                        
+                            <td>h)</td><td><div data-chemfig="CH_3-CH_2-COO-CH_3" data-solucion="false" data-longitud="2em"></div></td>                                                      
                         </tr>
                     </tbody>
                 </table>
@@ -276,8 +275,7 @@ baseDatosTemas["tema2"] = {
                             <td>i)</td><td><div data-chemfig="CH_3-CH_2-CH_2-CH_2-NH_2" data-solucion="false" data-longitud="2em"></div></td>
                             <td>j)</td><td>dibutilamina</td>
                             <td>k)</td><td>hexanamida</td>                                                        
-                            <td>l)</td><td><div data-chemfig="CH_3-CH_2-N(-[6]CH_2-[0]CH_3)-CH_2-CH_3" data-solucion="false" data-longitud="2em"></div></td>
-                            <td></td><td></td>                                                        
+                            <td>l)</td><td><div data-chemfig="CH_3-CH_2-N(-[6]CH_2-[0]CH_3)-CH_2-CH_3" data-solucion="false" data-longitud="2em"></div></td>                                                  
                         </tr>
                     </tbody>
                 </table>
