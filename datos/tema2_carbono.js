@@ -203,7 +203,7 @@ baseDatosTemas["tema2"] = {
                             <td>m)</td><td><div data-chemfig="CH_2=CH-CHO" data-solucion="false" data-longitud="2em"></div></td>
                             <td>n)</td><td><div data-chemfig="CH_3-CH_2-CH_2-CO-CH_2-CH_3" data-solucion="false" data-longitud="2em"></div></td>
                             <td>ñ)</td><td><div data-chemfig="CH_3-CH_2-CO-CH_2-CH(-[6]CH_2-[0]CH_3)-CH_2-CH_3" data-solucion="false" data-longitud="2em"></div></td>
-                            <td></td>                                                        
+                            <td></td><td></td>                                                       
                         </tr>
                     </tbody>
                 </table>
@@ -275,7 +275,7 @@ baseDatosTemas["tema2"] = {
                             <td>i)</td><td><div data-chemfig="CH_3-CH_2-CH_2-CH_2-NH_2" data-solucion="false" data-longitud="2em"></div></td>
                             <td>j)</td><td>dibutilamina</td>
                             <td>k)</td><td>hexanamida</td>                                                        
-                            <td>l)</td><td><div data-chemfig="CH_3-CH_2-N(-[6]CH_2-[0]CH_3)-CH_2-CH_3" data-solucion="false" data-longitud="2em"></div></td>                                                  
+                            <td>l)</td><td><div data-chemfig="CH_3-CH_2-N(-[6]CH_3)-CH_2-CH_3" data-solucion="false" data-longitud="2em"></div></td>                                                  
                         </tr>
                     </tbody>
                 </table>
