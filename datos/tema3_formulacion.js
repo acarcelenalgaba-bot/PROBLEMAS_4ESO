@@ -4,7 +4,7 @@ if (typeof baseDatosTemas === 'undefined') {
 
 baseDatosTemas["anexoFinorganica"] = {
     id: "anexoFinorganica",
-    titulo: "Tema3: Formulación y nomenclatura inorgánica",
+    titulo: "Tema 3: Formulación y nomenclatura inorgánica",
     deshabilitado: false,
     secciones: {
         "iones": {
