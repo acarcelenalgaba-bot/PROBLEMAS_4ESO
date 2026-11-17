@@ -466,7 +466,7 @@ baseDatosTemas["anexoFinorganica"] = {
             problemas: [
                 {
                     titulo: "Nomenclatura de ácidos oxoácidos",
-                    enunciado: `Nombra los siguientes compuestos utilizando la nomenclatura tradicional, la sistemática de composición y la sistemática de adición:<br>
+                    enunciado: `Nombra los siguientes compuestos utilizando la nomenclatura tradicional, la sistemática de composición:<br>
                     <table class="tabla-ejercicios">
                         <thead>
                             <tr>
@@ -654,94 +654,6 @@ baseDatosTemas["anexoFinorganica"] = {
                             <p><strong>d)</strong> Fe(IO)₂</p>
                             <p><strong>e)</strong> Zn(ClO)₂</p>
                             <p><strong>f)</strong> Mn(BrO₃)₂</p>
-                        </div>
-                    `
-                }
-            ]
-        },
-        "tabla_general": {
-            nombre: "Tabla general de nomenclatura",
-            problemas: [
-                {
-                    titulo: "Completar tabla de nomenclatura general",
-                    enunciado: `Para las siguientes fórmulas o nombres, completa una tabla identificando a qué casilla corresponde y cuáles serían las otras celdas según proceda. Las columnas son: <em>Compuesto · Nomenclatura tradicional · Nomenclatura de hidrógeno · Números de oxidación · Prefijos multiplicadores · Sistemática de composición · Sistemática de adición</em>.<br>
-                    <table class="tabla-ejercicios">
-                        <thead>
-                            <tr>
-                                <th></th><th>Compuesto / nombre</th>
-                                <th></th><th>Compuesto / nombre</th>
-                                <th></th><th>Compuesto / nombre</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>a)</td><td>Na₂O</td>
-                                <td>b)</td><td>Cr₂O₃</td>
-                                <td>c)</td><td>CaO</td>
-                            </tr>
-                            <tr>
-                                <td>d)</td><td>tetracloruro de platino</td>
-                                <td>e)</td><td>dibromuro de trioxígeno</td>
-                                <td>f)</td><td>CaS</td>
-                            </tr>
-                            <tr>
-                                <td>g)</td><td>NH₃</td>
-                                <td>h)</td><td>Ca(OH)₂</td>
-                                <td>i)</td><td>trihidróxido de aluminio</td>
-                            </tr>
-                            <tr>
-                                <td>j)</td><td>sulfuro de cromo(III)</td>
-                                <td>k)</td><td>fosfano</td>
-                                <td>l)</td><td>V₂(O₂)₅</td>
-                            </tr>
-                            <tr>
-                                <td>m)</td><td>FeN</td>
-                                <td>n)</td><td>cloruro de hidrógeno</td>
-                                <td>ñ)</td><td>dihidruro de hierro</td>
-                            </tr>
-                            <tr>
-                                <td>o)</td><td>SiF₄</td>
-                                <td>p)</td><td>bromuro de calcio</td>
-                                <td>q)</td><td>diyoduro de selenio</td>
-                            </tr>
-                            <tr>
-                                <td>r)</td><td>óxido de níquel(II)</td>
-                                <td>s)</td><td>sulfuro de hierro(II)</td>
-                                <td>t)</td><td>dibromuro de pentaoxígeno</td>
-                            </tr>
-                            <tr>
-                                <td>u)</td><td>PCl₃</td>
-                                <td>v)</td><td>metano</td>
-                                <td>w)</td><td>peróxido de potasio</td>
-                            </tr>
-                        </tbody>
-                    </table>`,
-                    solucion: `
-                        <div class='paso'>
-                            <p><strong>a) Na₂O</strong> — Tradicional: óxido de sodio · Hidrógeno: — · Nº oxidación: óxido de sodio · Prefijos: óxido de disodio · Composición: óxido de sodio · Adición: —</p>
-                            <p><strong>b) Cr₂O₃</strong> — Tradicional: óxido de cromo(III) · Nº oxidación: óxido de cromo(III) · Prefijos: trióxido de dicromo · Composición: trióxido de dicromo · Adición: —</p>
-                            <p><strong>c) CaO</strong> — Tradicional: óxido de calcio · Nº oxidación: óxido de calcio · Prefijos: óxido de calcio · Composición: óxido de calcio · Adición: —</p>
-                            <p><strong>d) tetracloruro de platino</strong> — Fórmula: PtCl₄ · Nº oxidación: cloruro de platino(IV) · Composición: tetracloruro de platino · Adición: —</p>
-                            <p><strong>e) dibromuro de trioxígeno</strong> — Fórmula: O₃Br₂ · Nº oxidación: bromuro de oxígeno(II) · Composición: dibromuro de trioxígeno · Adición: —</p>
-                            <p><strong>f) CaS</strong> — Tradicional: sulfuro de calcio · Nº oxidación: sulfuro de calcio · Prefijos: sulfuro de calcio · Composición: sulfuro de calcio · Adición: —</p>
-                            <p><strong>g) NH₃</strong> — Tradicional: amoniaco · Hidrógeno: nitruro de trihidrógeno · Nº oxidación: hidruro de nitrógeno(III) · Prefijos: trihidruro de nitrógeno · Composición: trihidruro de nitrógeno · Adición: azano</p>
-                            <p><strong>h) Ca(OH)₂</strong> — Tradicional: hidróxido de calcio · Nº oxidación: hidróxido de calcio · Prefijos: dihidróxido de calcio · Composición: dihidróxido de calcio · Adición: dihidróxidocalcio</p>
-                            <p><strong>i) trihidróxido de aluminio</strong> — Fórmula: Al(OH)₃ · Tradicional: hidróxido de aluminio · Nº oxidación: hidróxido de aluminio · Composición: trihidróxido de aluminio · Adición: trihidróxidoaluminio</p>
-                            <p><strong>j) sulfuro de cromo(III)</strong> — Fórmula: Cr₂S₃ · Nº oxidación: sulfuro de cromo(III) · Prefijos: trisulfuro de dicromo · Composición: trisulfuro de dicromo · Adición: —</p>
-                            <p><strong>k) fosfano</strong> — Fórmula: PH₃ · Tradicional: fosfina/fosfano · Hidrógeno: hidruro de fósforo · Nº oxidación: hidruro de fósforo(III) · Prefijos: trihidruro de fósforo · Composición: trihidruro de fósforo · Adición: fosfano</p>
-                            <p><strong>l) V₂(O₂)₅</strong> — Tradicional: peróxido de vanadio(V) · Nº oxidación: peróxido de vanadio(V) · Prefijos: pentaperóxido de divanadio · Composición: pentaperóxido de divanadio · Adición: —</p>
-                            <p><strong>m) FeN</strong> — Tradicional: nitruro de hierro(III) · Nº oxidación: nitruro de hierro(III) · Prefijos: nitruro de hierro · Composición: nitruro de hierro · Adición: —</p>
-                            <p><strong>n) cloruro de hidrógeno</strong> — Fórmula: HCl · Tradicional: ácido clorhídrico · Hidrógeno: cloruro de hidrógeno · Nº oxidación: cloruro de hidrógeno · Prefijos: cloruro de hidrógeno · Composición: cloruro de hidrógeno · Adición: clorano</p>
-                            <p><strong>ñ) dihidruro de hierro</strong> — Fórmula: FeH₂ · Nº oxidación: hidruro de hierro(II) · Composición: dihidruro de hierro · Adición: —</p>
-                            <p><strong>o) SiF₄</strong> — Tradicional: fluoruro de silicio · Nº oxidación: fluoruro de silicio(IV) · Prefijos: tetrafluoruro de silicio · Composición: tetrafluoruro de silicio · Adición: —</p>
-                            <p><strong>p) bromuro de calcio</strong> — Fórmula: CaBr₂ · Nº oxidación: bromuro de calcio · Prefijos: dibromuro de calcio · Composición: dibromuro de calcio · Adición: —</p>
-                            <p><strong>q) diyoduro de selenio</strong> — Fórmula: SeI₂ · Nº oxidación: yoduro de selenio(II) · Composición: diyoduro de selenio · Adición: —</p>
-                            <p><strong>r) óxido de níquel(II)</strong> — Fórmula: NiO · Prefijos: óxido de níquel · Composición: óxido de níquel · Adición: —</p>
-                            <p><strong>s) sulfuro de hierro(II)</strong> — Fórmula: FeS · Prefijos: sulfuro de hierro · Composición: sulfuro de hierro · Adición: —</p>
-                            <p><strong>t) dibromuro de pentaoxígeno</strong> — Fórmula: O₅Br₂ · Nº oxidación: bromuro de oxígeno(II) · Composición: dibromuro de pentaoxígeno · Adición: —</p>
-                            <p><strong>u) PCl₃</strong> — Tradicional: cloruro de fósforo(III) · Nº oxidación: cloruro de fósforo(III) · Prefijos: tricloruro de fósforo · Composición: tricloruro de fósforo · Adición: —</p>
-                            <p><strong>v) metano</strong> — Fórmula: CH₄ · Hidrógeno: hidruro de carbono · Nº oxidación: hidruro de carbono(IV) · Prefijos: tetrahidruro de carbono · Composición: tetrahidruro de carbono · Adición: metano</p>
-                            <p><strong>w) peróxido de potasio</strong> — Fórmula: K₂O₂ · Nº oxidación: peróxido de potasio · Prefijos: dióxido de dipotasio · Composición: dióxido de dipotasio · Adición: —</p>
                         </div>
                     `
                 }
