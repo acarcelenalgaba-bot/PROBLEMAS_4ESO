@@ -677,7 +677,7 @@ baseDatosTemas["anexoFinorganica"] = {
                             <tr>
                                 <td>g)</td><td>NaClO</td>
                                 <td>h)</td><td>cromato de sodio</td>
-                                <td>i)</td><td>dihidroxidooxidoazufre</td>
+                                <td>i)</td><td>dihidrogeno(trioxidosulfato)</td>
                             </tr>
                             <tr>
                                 <td>j)</td><td>BeSO₄</td>
