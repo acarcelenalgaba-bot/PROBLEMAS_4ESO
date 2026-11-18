@@ -493,18 +493,8 @@ baseDatosTemas["anexoFinorganica"] = {
                             </tr>
                             <tr>
                                 <td>j)</td><td>HPO₃</td>
-                                <td>k)</td><td>H₂S₂O₅</td>
-                                <td>l)</td><td>H₂S₂O₇</td>
-                            </tr>
-                            <tr>
-                                <td>m)</td><td>H₂SiO₃</td>
-                                <td>n)</td><td>H₃BO₃</td>
-                                <td>ñ)</td><td>H₅IO₆</td>
-                            </tr>
-                            <tr>
-                                <td>o)</td><td>H₂S₂O₅</td>
-                                <td></td><td></td>
-                                <td></td><td></td>
+                                <td>k)</td><td>H₂SiO₃</td>
+                                <td>l)</td><td>H₃BO₃</td>
                             </tr>
                         </tbody>
                     </table>`,
@@ -541,15 +531,15 @@ baseDatosTemas["anexoFinorganica"] = {
                         </thead>
                         <tbody>
                             <tr>
-                                <td>a)</td><td>ác. selénico</td>
+                                <td>a)</td><td>ácido selénico</td>
                                 <td>b)</td><td>hidrogeno(trioxidonitrato)</td>
                             </tr>
                             <tr>
-                                <td>c)</td><td>hidroxidodioxidoyodo</td>
-                                <td>d)</td><td>ác. hipoyodoso</td>
+                                <td>c)</td><td>hidrogeno(trioxidoyodato)</td>
+                                <td>d)</td><td>ácido hipoyodoso</td>
                             </tr>
                             <tr>
-                                <td>e)</td><td>dihidroxidooxidocarbono</td>
+                                <td>e)</td><td>dihidrogeno(trioxidocarbonato)</td>
                                 <td>f)</td><td>tetrahidrogeno(heptaoxidodifosfato)</td>
                             </tr>
                         </tbody>
@@ -702,10 +692,10 @@ baseDatosTemas["anexoFinorganica"] = {
                             <tr>
                                 <td>o)</td><td>CoSeO₃</td>
                                 <td>p)</td><td>nitrito de cobre(I)</td>
-                                <td>q)</td><td>hidroxidocloro</td>
+                                <td>q)</td><td>hidrogeno(dioxidobromato)</td>
                             </tr>
                             <tr>
-                                <td>r)</td><td>hidrogeno(dioxidobromato)</td>
+                                <td>r)</td><td>perclorato de sodio</td>
                                 <td>s)</td><td>selenito de níquel(II)</td>
                                 <td>t)</td><td>NaNO₃</td>
                             </tr>
@@ -715,14 +705,9 @@ baseDatosTemas["anexoFinorganica"] = {
                                 <td>w)</td><td>FeSO₃</td>
                             </tr>
                             <tr>
-                                <td>x)</td><td>hidroxidocloro</td>
+                                <td>x)</td><td>tetraoxidoclorato de litio</td>
                                 <td>y)</td><td>H₂SeO₄</td>
-                                <td>z)</td><td>perclorato de sodio</td>
-                            </tr>
-                            <tr>
-                                <td>aa)</td><td>Na₂SO₃</td>
-                                <td>ab)</td><td>tetraoxidoclorato de litio</td>
-                                <td>ac)</td><td>Cr₂(SO₄)₃</td>
+                                <td>z)</td><td>Na₂SO₃</td>
                             </tr>
                         </tbody>
                     </table>`,
